@@ -14,7 +14,8 @@ module.exports = {
       'sm': {'max': '767px'},
       'md': {'min': '768px', 'max': '1023px'},
       'lg': {'min': '1024px', 'max': '1279px'},
-      'xl': {'min': '1280px'},
+      'xl': {'min': '1280px', "max": '1439px'},
+      'xxl': { 'min': '1440px' }
     },
     colors: {
       transparent: 'transparent',
@@ -236,6 +237,22 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      sansJP:[
+        'Noto Sans JP',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        '"Noto Sans"',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+      ],
       sans: [
         'system-ui',
         '-apple-system',
