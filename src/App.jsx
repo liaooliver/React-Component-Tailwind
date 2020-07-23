@@ -39,7 +39,7 @@ export default function App() {
               </ul>
             </div>
           </nav>
-          <div className="w-full bg-gray-100">
+          <div className="w-full bg-gray-100 overflow-scroll">
             <div className="flex justify-center items-start px-6 py-4 h-full">
               <Switch>
                 <Route path="/commonheader">
