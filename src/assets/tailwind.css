@@ -63,3 +63,20 @@
     right: -21px;
     opacity: 1;
 }
+
+.after_underline:after{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -3px;
+    opacity: 1;
+    transition: all .15s ease-out;
+    background-color: #718095;
+}
+
+.after_underline:hover::after{
+    opacity: 0;
+}
