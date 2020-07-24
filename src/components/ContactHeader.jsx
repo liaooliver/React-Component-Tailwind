@@ -3,13 +3,14 @@ import mail from '../assets/icon_mail.svg';
 import tel from '../assets/icon_tel.svg';
 
 const ContactHeader = () => (
-  <div className="w-full relative p-6 pr-48 py-10 md:px-4 sm:px-2 bg-gray-300 flex justify-between items-center">
-    <span className="w-56 lg:w-48 md:w-32 sm:w-24">
-      <img width="100%" src="https://readycrew.jp/assets/images/common/hd_logo.png" alt="" />
+  <div className="w-full relative p-4 pr-48 py-6 sm:px-2 bg-gray-300 flex justify-between items-center">
+    <span className="w-56 lg:w-48 md:w-40 sm:w-32">
+      {/* <img width="100%" src="https://readycrew.jp/assets/images/common/hd_logo.png" alt="" /> */}
     </span>
     {/* list */}
-    <nav className="xl:hidden lg:hidden md:hidden sm:hidden">
-      <ul className="flex">
+    {/*   */}
+    <nav className="flex items-center p-6">
+      <ul className="flex xl:hidden lg:hidden md:hidden sm:hidden">
         <li className="mx-6"><a href="/#"><span className="before relative font-sansJP text-red-600 font-bold">Home</span></a></li>
         <li className="mx-6"><a href="/#"><span className="after relative font-sansJP font-bold hover:text-red-600">Ready Crewとは？</span></a></li>
         <li className="mx-6"><a href="/#"><span className="after relative font-sansJP font-bold hover:text-red-600">Ready Crewの想い</span></a></li>
@@ -39,14 +40,14 @@ const ContactHeader = () => (
         </div>
       </a>
       {/* menu btn */}
-      <div className="p-2 group flex flex-col items-center justify-center">
-        <div className="w-8 h-8 flex flex-col justify-around group">
+      <a href="/#" className="p-2 group flex flex-col items-center justify-center">
+        <div className="xxl:w-10 xxl:h-10 w-8 h-8 flex flex-col justify-around group">
           <span className="w-full h-1 rounded-sm bg-black group-hover:bg-red-600 group-hover:w-full transition-all duration-200" />
           <span className="w-1/3 h-1 rounded-sm bg-black group-hover:bg-red-600 group-hover:w-full transition-all duration-200" />
           <span className="w-2/3 h-1 rounded-sm bg-black group-hover:bg-red-600 group-hover:w-full transition-all duration-200" />
         </div>
         <span className="text-xs font-bold whitespace-no-wrap group-hover:text-red-600 transition-all duration-200">メニュー</span>
-      </div>
+      </a>
       {/* </div> */}
     </div>
   </div>
