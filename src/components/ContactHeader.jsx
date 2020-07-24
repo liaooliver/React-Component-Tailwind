@@ -3,15 +3,9 @@ import mail from '../assets/icon_mail.svg';
 import tel from '../assets/icon_tel.svg';
 
 const ContactHeader = () => (
-<<<<<<< HEAD
-  <div className="w-full relative p-4 pr-48 py-6 sm:px-2 bg-gray-300 flex justify-between items-center">
-    <span className="w-56 lg:w-48 md:w-40 sm:w-32">
-      {/* <img width="100%" src="https://readycrew.jp/assets/images/common/hd_logo.png" alt="" /> */}
-=======
   <div className="w-full relative px-6 pr-48 py-8 md:px-4 sm:px-2 bg-gray-300 flex justify-between items-center">
     <span className="w-56 lg:w-48 md:w-32 sm:w-24">
       <img width="100%" src="https://readycrew.jp/assets/images/common/hd_logo.png" alt="" />
->>>>>>> origin/master
     </span>
     {/* list */}
     {/*   */}
@@ -28,49 +22,49 @@ const ContactHeader = () => (
       <div className="w-full p-10 bg-gray-300">
         <ul className="w-full">
           <li className="mt-6 text-center">
-            <a href="">
+            <a href="/#">
               <span className="relative before pt-1 font-sansJP text-red-600 xxl:text-xl xl:text-xl lg:text-xl text-base font-bold">Home</span>
             </a>
           </li>
           <li className="mt-6 text-center">
-            <a href="">
+            <a href="/#">
               <span className="relative after pt-1 hover:text-red-600 font-sansJP xxl:text-xl xl:text-xl lg:text-xl text-base font-bold">Ready Crewとは？</span>
             </a>
           </li>
           <li className="mt-6 text-center">
-            <a href="">
+            <a href="/#">
               <span className="relative after pt-1 hover:text-red-600 font-sansJP xxl:text-xl xl:text-xl lg:text-xl text-base font-bold">Ready Crewの想い</span>
             </a>
           </li>
           <li className="mt-6 text-center">
-            <a href="">
+            <a href="/#">
               <span className="relative after pt-1 hover:text-red-600 font-sansJP xxl:text-xl xl:text-xl lg:text-xl text-base font-bold">マンガで知るReady Crew</span>
             </a>
           </li>
           <li className="mt-6 text-center">
-            <a href="">
+            <a href="/#">
               <span className="relative after pt-1 hover:text-red-600 font-sansJP xxl:text-xl xl:text-xl lg:text-xl text-base font-bold">ケーススタディ</span>
             </a>
           </li>
           <li className="mt-6 text-center">
-            <a href="">
+            <a href="/#">
               <span className="relative after pt-1 hover:text-red-600 font-sansJP xxl:text-xl xl:text-xl lg:text-xl text-base font-bold">ご利用企業</span>
             </a>
           </li>
           <li className="mt-6 text-center">
-            <a href="">
+            <a href="/#">
               <span className="relative after pt-1 hover:text-red-600 font-sansJP xxl:text-xl xl:text-xl lg:text-xl text-base font-bold">会社を登録</span>
             </a>
           </li>
-          <li className="mt-6 text-center"><button className="px-24 py-4 bg-red-600 rounded-full bg-red-600 border border-red-600 hover:bg-white text-white hover:text-red-600 font-bold">お問い合わせ</button></li>
+          <li className="mt-6 text-center"><button type="button" className="px-24 py-4 bg-red-600 rounded-full bg-red-600 border border-red-600 hover:bg-white text-white hover:text-red-600 font-bold">お問い合わせ</button></li>
         </ul>
         <ul className="mt-4 flex justify-center">
-          <li className="mx-3"><a href=""><span className="relative after_underline text-xs text-gray-600">マッチング実績</span></a></li>
-          <li className="mx-3"><a href=""><span className="relative after_underline text-xs text-gray-600">よくあるご質問</span></a></li>
-          <li className="mx-3"><a href=""><span className="relative after_underline text-xs text-gray-600">ニュース</span></a></li>
-          <li className="mx-3"><a href=""><span className="relative after_underline text-xs text-gray-600">運営企業</span></a></li>
-          <li className="mx-3"><a href=""><span className="relative after_underline text-xs text-gray-600">採用情報</span></a></li>
-          <li className="mx-3"><a href=""><span className="relative after_underline text-xs text-gray-600">プライバシーポリシー</span></a></li>
+          <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">マッチング実績</span></a></li>
+          <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">よくあるご質問</span></a></li>
+          <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">ニュース</span></a></li>
+          <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">運営企業</span></a></li>
+          <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">採用情報</span></a></li>
+          <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">プライバシーポリシー</span></a></li>
         </ul>
       </div>
     </div>
