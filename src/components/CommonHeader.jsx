@@ -31,7 +31,7 @@ export default function CommonHeader() {
           {
             lists.map(
               (list) => (
-                <li key={list} className="md:text-white md:py-5 md:border-b sm:text-white sm:py-5 sm:border-b pr-6 last:pr-0 hover:text-blue-700 hover:text-blue-700">
+                <li key={list} className="md:text-white md:py-5 md:border-b sm:text-white sm:py-5 sm:border-b pr-6 last:pr-0 hover:text-blue-700">
                   <a href="/">{list}</a>
                 </li>
               ),
