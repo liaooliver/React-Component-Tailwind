@@ -1,4 +1,5 @@
 import React from 'react';
+import DetailContentTitle from './DetailContentTitle';
 
 const DetailsCard = () => {
   const color = [{
@@ -26,25 +27,29 @@ const DetailsCard = () => {
     name: '#90cdf4',
   }];
 
+  const title = 'Color Palette';
+  const content = 'Click on the color to copy code';
+
   return (
-    <div>
-      <h6 className="font-bold text-gray-800">Color Palette</h6>
-      <p>Click on the color to copy code</p>
-      <ul className="w-full flex flex-wrap mt-6">
+    <div className='min-w-full'>
+      <DetailContentTitle title={title} content={content} />
+      <ul className='w-full flex flex-wrap mt-6'>
         {
           color.map((item) => (
-            <li key={item.name}>
-              <button type="button" className="p-3 py-1 mr-2 rounded-full bg-white flex items-center mb-6 cursor-pointer focus:outline-none active:bg-gray-300">
+            <li key={item.name} className="odd:mr-3">
+              <button type='button' className='p-3 py-1 rounded-full bg-white flex items-center mb-6 cursor-pointer focus:outline-none active:bg-gray-300'>
                 <span className={`w-6 h-6 rounded-full inline-block mr-1 ${item.code}`} />
-                <span className="w-20 text-lg ml-1">{ item.name }</span>
+                <span className='w-20 text-lg ml-1'>
+                  {item.name}
+                </span>
               </button>
             </li>
           ))
         }
       </ul>
-      <h6 className="font-bold text-gray-800">Fonts</h6>
-      <p className="my-3 text-sm text-gray-700">Muli Regular</p>
-      <p className="my-3 text-sm text-gray-700">Muli Bold</p>
+      <h6 className='font-bold text-gray-600'>Fonts</h6>
+      <p className='my-3 text-sm text-gray-700'>Muli Regular</p>
+      <p className='my-3 text-sm text-gray-700'>Muli Bold</p>
     </div>
   );
 };
