@@ -1,5 +1,7 @@
 import React from 'react';
 import DetailContentTitle from './DetailContentTitle';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import copy from '../assets/paper.png';
 
 const DetailsCard = () => {
   const color = [{
@@ -37,12 +39,14 @@ const DetailsCard = () => {
         {
           color.map((item) => (
             <li key={item.name} className="odd:mr-3">
-              <button type='button' className='p-3 py-1 rounded-full bg-white flex items-center mb-6 cursor-pointer focus:outline-none active:bg-gray-300'>
-                <span className={`w-6 h-6 rounded-full inline-block mr-1 ${item.code}`} />
-                <span className='w-20 text-lg ml-1'>
-                  {item.name}
-                </span>
-              </button>
+              <CopyToClipboard text={item.name}>
+                <button type='button' className='group p-3 py-1 rounded-full bg-white flex items-center mb-6 cursor-pointer focus:outline-none'>
+                  <span className={`w-6 h-6 rounded-full inline-block mr-1 ${item.code}`} />
+                  <span className='w-20 text-lg ml-1'>
+                    {item.name}
+                  </span>
+                </button>
+              </CopyToClipboard>
             </li>
           ))
         }
