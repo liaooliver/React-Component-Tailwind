@@ -9,6 +9,7 @@ import logo from './assets/maxresdefault.jpg';
 import CommonHeader from './components/CommonHeader';
 import ContactHeader from './components/ContactHeader';
 import DetailsCard from './components/DetailsCard';
+import TableList from './components/TableList';
 
 export default function App() {
   return (
@@ -37,6 +38,9 @@ export default function App() {
                 <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
                   <Link to="/detailcard">Details Card</Link>
                 </li>
+                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
+                  <Link to="/tablelist">Table List</Link>
+                </li>
               </ul>
             </div>
           </nav>
@@ -51,6 +55,9 @@ export default function App() {
                 </Route>
                 <Route path="/detailcard">
                   <DetailsCard />
+                </Route>
+                <Route path="/tablelist">
+                  <TableList />
                 </Route>
               </Switch>
             </div>

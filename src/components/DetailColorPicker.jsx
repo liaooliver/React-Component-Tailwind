@@ -1,7 +1,6 @@
 import React from 'react';
 import DetailContentTitle from './DetailContentTitle';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import copy from '../assets/paper.png';
 
 const DetailsCard = () => {
   const color = [{
