@@ -24,7 +24,7 @@ export default function App() {
         </div>
 
         <div className="flex flex-grow">
-          <nav className="w-64 border-black shadow px-6">
+          <nav className="w-64 flex-none border-black shadow px-6">
             <h5 className="text-gray-600 uppercase my-4">Component Example</h5>
             <div>
               <h5 className="text-sm font-bold text-gray-500 uppercase">Header</h5>
@@ -44,8 +44,8 @@ export default function App() {
               </ul>
             </div>
           </nav>
-          <div className="w-full bg-gray-100 overflow-scroll">
-            <div className="flex justify-center items-start px-6 py-4 h-full">
+          <div className="flex-1 bg-gray-100 overflow-scroll">
+            <div className="flex justify-start items-start px-6 py-4 h-full">
               <Switch>
                 <Route path="/commonheader">
                   <CommonHeader />
