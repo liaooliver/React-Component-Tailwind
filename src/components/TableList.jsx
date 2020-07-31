@@ -1,4 +1,3 @@
-// https://uidesigndaily.com/posts/sketch-table-dropdown-pagination-day-1142
 import React from 'react';
 import '../index.css';
 
@@ -106,26 +105,36 @@ const TableList = () => {
                                     </span>
                                 </td>
                                 <td className="py-4">
-                                    <div>{data.name.text}</div>
+                                    <div className="font-bold">{data.name.text}</div>
                                     <div className="flex justify-start items-center">
                                         <span className={`inline-block w-2 h-2 rounded-full ${data.name.statusCode}`} />
-                                        <span className="ml-2">{data.name.status}</span>
+                                        <span className="ml-2 text-sm">{data.name.status}</span>
                                     </div>
                                 </td>
                                 <td className="py-4 align-top">{data.views}</td>
-                                <td className="py-4 align-top">{data.submissions}</td>
+                                <td className={`py-4 align-top ${data.submissions > 0 ? 'text-blue-500' : 'text-black'}`}>{data.submissions}</td>
                                 <td className="py-4 align-top">{data.lastModified}</td>
                             </tr>
                         ))
                     }
                 </tbody>
             </table>
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div className="flex justify-end items-center">
+                <span className="mr-4 text-sm text-gray-700 ">
+                    <a href="/tablelist">Prev</a>
+                </span>
+                <span className="px-4 font-bold text-sm bg-gray-100 rounded shadow-sm">
+                    <a href="/tablelist">1</a>
+                </span>
+                <span className="px-4 font-bold text-sm ">
+                    <a href="/tablelist">2</a>
+                </span>
+                <span className="px-4 font-bold text-sm ">
+                    <a href="/tablelist">3</a>
+                </span>
+                <span className="ml-4 text-sm text-gray-700">
+                    <a href="/tablelist">Next</a>
+                </span>
             </div>
         </div>
     );
