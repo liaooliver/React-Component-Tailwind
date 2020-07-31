@@ -8,7 +8,6 @@ const ContactHeader = () => (
       <img width="100%" src="https://readycrew.jp/assets/images/common/hd_logo.png" alt="" />
     </span>
     {/* list */}
-    {/*   */}
     <nav className="flex items-center p-6">
       <ul className="flex xl:hidden lg:hidden md:hidden sm:hidden">
         <li className="mx-6"><a href="/#"><span className="before relative font-sansJP text-red-600 font-bold">Home</span></a></li>
@@ -58,7 +57,7 @@ const ContactHeader = () => (
           </li>
           <li className="mt-6 text-center"><button type="button" className="px-24 py-4 bg-red-600 rounded-full bg-red-600 border border-red-600 hover:bg-white text-white hover:text-red-600 font-bold">お問い合わせ</button></li>
         </ul>
-        <ul className="mt-4 flex justify-center">
+        <ul className="mt-4 flex justify-center md:flex-col sm:flex-col md:items-center sm:items-center">
           <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">マッチング実績</span></a></li>
           <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">よくあるご質問</span></a></li>
           <li className="mx-3"><a href="/#"><span className="relative after_underline text-xs text-gray-600">ニュース</span></a></li>
@@ -75,9 +74,7 @@ const ContactHeader = () => (
           <span className="w-8 mb-1">
             <img src={mail} alt="mail" />
           </span>
-          <span className="text-xs">
-            お問い合わせ
-          </span>
+          <span className="text-xs">お問い合わせ</span>
         </div>
       </a>
       <a href="/#">
@@ -85,9 +82,7 @@ const ContactHeader = () => (
           <span className="w-8 mb-1">
             <img src={tel} alt="tel" />
           </span>
-          <span className="text-xs">
-            電話
-          </span>
+          <span className="text-xs">電話</span>
         </div>
       </a>
       {/* menu btn */}
@@ -99,7 +94,6 @@ const ContactHeader = () => (
         </div>
         <span className="text-xs font-bold whitespace-no-wrap group-hover:text-red-600 transition-all duration-200">メニュー</span>
       </a>
-      {/* </div> */}
     </div>
   </div>
 );

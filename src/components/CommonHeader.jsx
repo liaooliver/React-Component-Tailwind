@@ -18,13 +18,13 @@ export default function CommonHeader() {
       <span className="xs:w-24">
         <img src="https://www.jw-advisers.co.jp/assets/images/common/logo.svg" alt="logo" />
       </span>
-      <span className={`${state.isOpenNav ? 'hidden' : ''} w-8 cursor-pointer xl:hidden lg:hidden`} onClick={() => {}} onKeyDown={openNav} role="button" tabIndex="-1">
+      <span className={`${state.isOpenNav ? 'hidden' : ''} w-8 cursor-pointer xxl:hidden xl:hidden lg:hidden`} onClick={openNav} onKeyDown={openNav} role="button" tabIndex="-1">
         <img src={menu} alt="menu" />
       </span>
       <nav className={`${state.isOpenNav ? 'block md:absolute sm:absolute md:inset-0 sm:inset-0 md:p-12 sm:p-12' : 'md:hidden sm:hidden'}`}>
         <ul className="flex md:flex-col sm:flex-col md:relative sm:relative md:bg-blue-500 sm:bg-blue-500 md:p-10 sm:p-10 md:rounded-md sm:rounded-md">
-          <div className="flex justify-end absolute top-0 right-0 pt-3 pr-6 lg:hidden xl:hidden">
-            <span className="w-8" onClick={() => {}} onKeyDown={openNav} role="button" tabIndex="-1">
+          <div className="flex justify-end absolute top-0 right-0 pt-3 pr-6 xxl:hidden xl:hidden lg:hidden">
+            <span className="w-8" onClick={openNav} onKeyDown={openNav} role="button" tabIndex="-1">
               <img className="cursor-pointer" src={close} alt="close" />
             </span>
           </div>
