@@ -17,7 +17,7 @@ const DetailsCard = () => {
   return (
     <div style={{ width: '360px' }} className='py-2 px-3 bg-gray-200 rounded-md'>
       <div className='flex mb-4'>
-        <button type="button" onClick={() => { sliderContent(0) }} onKeyDown={sliderContent} className='w-1/3 focus:shadow-md focus:outline-none focus:bg-white text-black font-bold py-2 px-4 rounded-md'>Details</button>
+        <button type="button" onClick={() => { sliderContent(0) }} onKeyDown={sliderContent} className='w-1/3 focus:shadow-md focus:outline-none focus:bg-white text-black font-bold py-2 px-4 rounded-md' autoFocus>Details</button>
         <button type="button" onClick={() => { sliderContent(336) }} onKeyDown={sliderContent} className='w-1/3 focus:shadow-md focus:outline-none focus:bg-white text-black font-bold py-2 px-4 rounded-md'>Tutorials</button>
         <button type="button" onClick={() => { sliderContent(672) }} onKeyDown={sliderContent} className='w-1/3 focus:shadow-md focus:outline-none focus:bg-white text-black font-bold py-2 px-4 rounded-md'>
           Code
