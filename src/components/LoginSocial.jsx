@@ -3,22 +3,34 @@ import facebook from '../assets/facebook.svg';
 import twitter from '../assets/twitter.svg';
 import gmail from '../assets/gmail.svg';
 
-const LoginSocial = ({emitEvent}) => {
+const LoginSocial = ({isOpened, emitEvent}) => {
 
     const [move, setMove] = useState({
-        transform: "translateX(0px)"
+        transform: "translateX(0px)",
+        opacity: 1
     })
+
+    useEffect(() => {
+        if (isOpened === false) showSocialPage()
+    }, [isOpened])
 
     const openCommonPage = () => {
         emitEvent(true)   
         setMove({
-            transform: "translateX(150px)",
+            transform: "translateX(400px)",
             opacity: 0
         })
     }
 
+    const showSocialPage = ()  => {
+        setMove({
+            transform: "translateX(0px)",
+            opacity: 1
+        })
+    }
+
     return (
-    <div className="min-w-full transition-all duration-500 ease-out" style={move}>
+    <div className="min-w-full transition-all duration-500 ease-in" style={move}>
         <div className="mb-8"> 
             <p className="font-bold text-3xl">Get started</p>
         </div>

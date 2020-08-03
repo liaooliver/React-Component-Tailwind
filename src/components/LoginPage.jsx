@@ -11,12 +11,16 @@ const LoginPage = () => {
         setUseForm(true)
     }
 
+    const getEmitFromLoginCommon = () => {
+        setUseForm(false)
+    }
+
     return(
     <div className="mx-auto shadow-lg rounded-lg flex" style={{'width': '768px'}}>
         <div className="w-1/4 rounded-l-lg bg-blue-900"></div>
         <div className="w-3/4 rounded-r-lg bg-gray-200 px-16 py-16 flex">
-            <LoginSocial emitEvent={getEmitFromLoginSocial} />
-            <LoginCommon isOpened={useForm} />
+            <LoginSocial emitEvent={getEmitFromLoginSocial} isOpened={useForm} />
+            <LoginCommon emitEvent={getEmitFromLoginCommon} isOpened={useForm} />
         </div>
     </div>
 )};
