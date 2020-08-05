@@ -2,6 +2,7 @@
   "name": "react-tailwind",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://liaooliver.github.io/React-Component-Tailwind",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -20,7 +21,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "install": "^0.13.0",
     "npm": "^6.14.7",
     "postcss-cli": "^7.1.1"
