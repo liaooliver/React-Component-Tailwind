@@ -1,44 +1,44 @@
-.mx-auto > div:first-child{
+.timeline-container > div:first-child{
     margin-left: -50%;
 }
 
-.mx-auto > div:last-child{
+.timeline-container > div:last-child{
     margin-right: -50%;
 }
 
-.my-10:first-child > div:first-child {
+.timeline-top:first-child > div:first-child {
     height: 2px;
     background-image: linear-gradient(to right, #fff, #4299e1);
 }
 
-.my-10:first-child > div:last-child {
+.timeline-top:first-child > div:last-child {
     border-top: 3px solid;
     border-right: 3px solid;
     border-color: #4299e1;
 }
 
-.my-10:last-child > div:first-child {
+.timeline-bottom:last-child > div:first-child {
     height: 2px;
     background-image: linear-gradient(to left, #fff, #4299e1);
 }
 
-.my-10:last-child > div:last-child {
+.timeline-bottom:last-child > div:last-child {
     border-bottom: 3px solid;
     border-left: 3px solid;
     border-color: #4299e1;
 }
 
-.my-32 > div:first-child{
+.timeline-medium > div:first-child{
     border-bottom: 3px solid;
     border-right: 3px solid;
     border-color: #4299e1;
 }
 
-.my-32 > div:nth-child(2){
+.timeline-medium > div:nth-child(2){
     height: 2px;
 }
 
-.my-32 > div:last-child{
+.timeline-medium > div:last-child{
     border-top: 3px solid;
     border-left: 3px solid;
     border-color: #4299e1;
