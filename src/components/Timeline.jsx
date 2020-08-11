@@ -1,19 +1,19 @@
 import React from 'react';
-import '../styles/timeline.css';
+import timeline from '../styles/timeline.scoped.css';
 
 const Timeline = () => {
     return <div className="w-full py-20 bg-white relative">
-        <div className="w-1/2 mx-auto relative">
-            <div className="my-10 relative">
+        <div className="w-1/2 mx-auto relative timeline-container">
+            <div className="my-10 relative timeline-top">
                 <div className="w-3/4" />
                 <div className="absolute top-0 right-0 h-10 w-1/4 rounded-tr-lg" />
             </div>
-            <div className="my-32 relative">
+            <div className="my-32 relative timeline-medium">
                 <div className="absolute bottom-0 right-0 h-24 w-1/4 rounded-br-lg" />
                 <div className="w-1/2 mx-auto bg-blue-500" />
                 <div className="absolute top-0 left-0 h-24 w-1/4 rounded-tl-lg" />
             </div>
-            <div className="my-10 relative">
+            <div className="my-10 relative timeline-bottom">
                 <div className="w-3/4 ml-auto" />
                 <div className="absolute bottom-0 left-0 h-10 w-1/4 rounded-bl-lg" />
             </div>
