@@ -11,6 +11,7 @@ import ContactHeader from './components/ContactHeader';
 import DetailsCard from './components/DetailsCard';
 import TableList from './components/TableList';
 import LoginPage from './components/LoginPage';
+import Timeline from './components/Timeline.jsx';
 
 export default function App() {
   return (
@@ -45,6 +46,9 @@ export default function App() {
                 <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
                   <Link to="/login">Login Page</Link>
                 </li>
+                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
+                  <Link to="/timeline">Time Line</Link>
+                </li>
               </ul>
             </div>
           </nav>
@@ -65,6 +69,9 @@ export default function App() {
                 </Route>
                 <Route path="/login">
                   <LoginPage />
+                </Route>
+                <Route path="/timeline">
+                  <Timeline />
                 </Route>
               </Switch>
             </div>
