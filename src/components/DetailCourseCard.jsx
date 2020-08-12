@@ -1,5 +1,5 @@
 import React from 'react';
-import arrow from '../assets/arrow.svg';
+import arrow from '../assets/icon/arrow.svg';
 
 const DetailCourseCard = ({ link, name }) => (
   <a href={link}>

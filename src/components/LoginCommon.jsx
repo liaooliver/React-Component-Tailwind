@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import returnicon from '../assets/returnicon.svg';
+import returnicon from '../assets/icon/returnicon.svg';
 
 const LoginCommon = ({ isOpened, emitEvent }) => {
 
