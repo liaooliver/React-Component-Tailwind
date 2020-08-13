@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "http://liaooliver.github.io/React-Component-Tailwind",
   "dependencies": {
+    "@ramonak/react-progress-bar": "^1.0.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "autoprefixer": "^9.8.5",
     "axios": "^0.19.2",
+    "rc-progress": "^3.0.0",
     "react": "^16.13.1",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
