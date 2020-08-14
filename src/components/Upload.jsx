@@ -1,7 +1,6 @@
 // https://uidesigndaily.com/posts/sketch-upload-file-share-day-709
-import React, { useState } from 'react';
-import { useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+
 import UploadItem from './UploadItem';
 import ducoment from '../assets/icon/document.png';
 
@@ -12,39 +11,25 @@ const style = {
 
 const Upload = () => {
 
-    const CancelToken = axios.CancelToken;
-    const source = CancelToken.source();
-
     const [uploadLists, setUploadLists] = useState([]);
-    const [progress, setProgress] = useState(0);
+    const [files, setFiles] = useState()
     
-    const dndUploadfile = (event) => {
-        console.log(event.target.files[0].name)
-        const evtTarget = {
-            progress: 0,
-            filename: event.target.files[0].name
+    const dndUploadfile = async (files) => {
+        
+        if(!files) return
+        const length = files.length
+        const filesContainer = [];
+
+        for (let i = 0; i < length; i++){
+            filesContainer.push(files[i])
         }
-        setProgress(0)
-        setUploadLists([...uploadLists, evtTarget])
-
-        const file = event.target.files;
-        const formData = new FormData();
-        formData.append(event.target.files[0].name, file[0])
-
-        axios.post('http://localhost:8080/api/upload', formData, {
-            cancelToken: source.CancelToken,
-            onUploadProgress: function (progressEvent) {
-                setProgress((progressEvent.loaded * 100) / progressEvent.total);
-                evtTarget.progress = (progressEvent.loaded * 100) / progressEvent.total;
-            }
-        })
-            .then(response => console.log(response))
-            .catch(error => console.log(error))
+        console.log(filesContainer)
+        setUploadLists([...uploadLists, ...filesContainer])
     }
 
     useEffect(() => {
-        console.log(uploadLists, progress);
-    }, [uploadLists, progress])
+        dndUploadfile(files)
+    }, [files])
 
     const changeBackground = (evt) => {
         evt.target.parentElement.classList.add('bg-gray-100');
@@ -61,7 +46,7 @@ const Upload = () => {
         </div>
         <div className="border-4 border-dashed rounded-md relative py-12 text-center mb-6  active:border-dotted active:bg-gray-100 hover:bg-gray-100" onDragOver={(event)=>{ changeBackground(event)}} onDragLeave={(event)=>{ removeBackground(event) }} >
             <p>Drag and drop files here or <a href="/">browse</a></p>
-            <input className="absolute left-0 top-0 opacity-0 w-full h-full z-0" type="file" name="upload" onChange={(event) => { dndUploadfile(event)}} />
+            <input multiple className="absolute left-0 top-0 opacity-0 w-full h-full z-0" type="file" name="upload" onChange={ event => setFiles(event.target.files)} />
         </div>
         <div>
             <p className="font-bold">Upload files</p>
@@ -73,7 +58,9 @@ const Upload = () => {
                     </div>:
                     <ul>
                         {
-                            uploadLists.map((list, index) => <UploadItem item={list} key={list.filename} />  )
+                            uploadLists.map((list, index) => {
+                                return <UploadItem item={list} key={list.lastModified} />
+                            })
                         }
                     </ul>
             }
