@@ -5,20 +5,21 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import logo from './assets/maxresdefault.jpg';
+import logo from './assets/icon/maxresdefault.jpg';
 import CommonHeader from './components/CommonHeader';
 import ContactHeader from './components/ContactHeader';
 import DetailsCard from './components/DetailsCard';
 import TableList from './components/TableList';
 import LoginPage from './components/LoginPage';
 import Timeline from './components/Timeline.jsx';
+import Upload from './components/Upload.jsx';
 
 export default function App() {
   return (
     <Router>
       <div className="flex flex-col h-screen">
         <div className="shadow z-10">
-          <div className="py-3">
+          <div className="p-3">
             <div className="w-24">
               <img src={logo} alt="tailwind Logo" />
             </div>
@@ -49,6 +50,9 @@ export default function App() {
                 <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
                   <Link to="/timeline">Time Line</Link>
                 </li>
+                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
+                  <Link to="/upload">Upload page</Link>
+                </li>
               </ul>
             </div>
           </nav>
@@ -72,6 +76,9 @@ export default function App() {
                 </Route>
                 <Route path="/timeline">
                   <Timeline />
+                </Route>
+                <Route path="/upload">
+                  <Upload />
                 </Route>
               </Switch>
             </div>

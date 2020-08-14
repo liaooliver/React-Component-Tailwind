@@ -21,6 +21,6 @@
 }
 
 .styled-checkbox:checked + label::before{
-  background-image: url('./assets/correct.png');
+  background-image: url('./assets/icon/correct.png');
 }
 
