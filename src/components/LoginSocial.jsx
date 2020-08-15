@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import facebook from '../assets/facebook.svg';
-import twitter from '../assets/twitter.svg';
-import gmail from '../assets/gmail.svg';
+import facebook from '../assets/icon/facebook.svg';
+import twitter from '../assets/icon/twitter.svg';
+import gmail from '../assets/icon/gmail.svg';
 
 const LoginSocial = ({isOpened, emitEvent}) => {
 

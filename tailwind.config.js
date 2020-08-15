@@ -341,6 +341,7 @@ module.exports = {
       ...negative(theme('spacing')),
     }),
     maxHeight: {
+      '320': '320px',
       full: '100%',
       screen: '100vh',
     },
@@ -366,6 +367,7 @@ module.exports = {
     },
     minWidth: {
       '0': '0',
+      '320': '320px',
       full: '100%',
     },
     objectPosition: {
@@ -664,7 +666,7 @@ module.exports = {
     borderColor: ['responsive', 'hover', 'focus'],
     borderOpacity: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
-    borderStyle: ['responsive'],
+    borderStyle: ['responsive', 'hover', 'focus', 'active'],
     borderWidth: ['responsive'],
     boxShadow: ['responsive', 'hover', 'focus', 'active'],
     boxSizing: ['responsive'],

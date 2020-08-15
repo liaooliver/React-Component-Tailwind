@@ -1,5 +1,5 @@
 import React from 'react';
-// import arrow from '../assets/arrow.svg';
+// import arrow from '../assets/icon/arrow.svg';
 import DetailContentTitle from './DetailContentTitle';
 import DetailCourseCard from './DetailCourseCard';
 import DetailNotice from './DetailNotice';

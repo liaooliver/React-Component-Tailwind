@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import menu from '../assets/iconfinder_menu-alt_134216.png';
-import close from '../assets/close.png';
+import menu from '../assets/icon/iconfinder_menu-alt_134216.png';
+import close from '../assets/icon/close.png';
 
 export default function CommonHeader() {
   const [state, setState] = useState({
@@ -16,7 +16,7 @@ export default function CommonHeader() {
   return (
     <div className="w-full py-4 px-6 bg-gray-300 flex items-center justify-between shadow-md relative">
       <span className="xs:w-24">
-        <img src="https://www.jw-advisers.co.jp/assets/images/common/logo.svg" alt="logo" />
+        <img src="https://www.jw-advisers.co.jp/assets/icon/images/common/logo.svg" alt="logo" />
       </span>
       <span className={`${state.isOpenNav ? 'hidden' : ''} w-8 cursor-pointer xxl:hidden xl:hidden lg:hidden`} onClick={openNav} onKeyDown={openNav} role="button" tabIndex="-1">
         <img src={menu} alt="menu" />

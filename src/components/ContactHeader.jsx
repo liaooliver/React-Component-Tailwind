@@ -1,11 +1,11 @@
 import React from 'react';
-import mail from '../assets/icon_mail.svg';
-import tel from '../assets/icon_tel.svg';
+import mail from '../assets/icon/icon_mail.svg';
+import tel from '../assets/icon/icon_tel.svg';
 
 const ContactHeader = () => (
   <div className="w-full relative px-6 pr-48 py-8 md:px-4 sm:px-2 bg-gray-300 flex justify-between items-center">
     <span className="w-56 lg:w-48 md:w-32 sm:w-24">
-      <img width="100%" src="https://readycrew.jp/assets/images/common/hd_logo.png" alt="" />
+      <img width="100%" src="https://readycrew.jp/assets/icon/images/common/hd_logo.png" alt="" />
     </span>
     {/* list */}
     <nav className="flex items-center p-6">
