@@ -1,5 +1,5 @@
 import React from 'react';
-import timeline from '../styles/timeline.scoped.css';
+import '../styles/timeline.scoped.css';
 
 const Timeline = () => {
     return <div className="w-full py-20 bg-white relative">
