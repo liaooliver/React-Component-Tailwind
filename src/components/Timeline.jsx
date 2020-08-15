@@ -1,4 +1,6 @@
 import React from 'react';
+import '../styles/timeline.scoped.css';
+
 
 const Timeline = () => {
     return <div className="w-full py-20 bg-white relative">
