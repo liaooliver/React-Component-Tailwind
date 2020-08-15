@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5aab04f94f313fa31eb5993f27069a32",
+    "revision": "1f926c26b4afdf1124e54c8c0f219b0a",
     "url": "/React-Component-Tailwind/index.html"
   },
   {
-    "revision": "2c161c942207a891f224",
-    "url": "/React-Component-Tailwind/static/css/main.676531c4.chunk.css"
+    "revision": "bcdaffba0fc27e7d12e9",
+    "url": "/React-Component-Tailwind/static/css/main.72c89ae2.chunk.css"
   },
   {
-    "revision": "82ac3ad27cd267cb874d",
-    "url": "/React-Component-Tailwind/static/js/2.01f838ba.chunk.js"
+    "revision": "174cd56e0bd6a58cad49",
+    "url": "/React-Component-Tailwind/static/js/2.a394fafa.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/React-Component-Tailwind/static/js/2.01f838ba.chunk.js.LICENSE.txt"
+    "url": "/React-Component-Tailwind/static/js/2.a394fafa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2c161c942207a891f224",
-    "url": "/React-Component-Tailwind/static/js/main.fb54badb.chunk.js"
+    "revision": "bcdaffba0fc27e7d12e9",
+    "url": "/React-Component-Tailwind/static/js/main.ce34ccc3.chunk.js"
   },
   {
     "revision": "df21327d7899a14d0872",
