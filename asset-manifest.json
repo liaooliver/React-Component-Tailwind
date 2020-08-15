@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React-Component-Tailwind/static/css/main.4b704634.chunk.css",
-    "main.js": "/React-Component-Tailwind/static/js/main.f40437dd.chunk.js",
-    "main.js.map": "/React-Component-Tailwind/static/js/main.f40437dd.chunk.js.map",
+    "main.css": "/React-Component-Tailwind/static/css/main.676531c4.chunk.css",
+    "main.js": "/React-Component-Tailwind/static/js/main.fb54badb.chunk.js",
+    "main.js.map": "/React-Component-Tailwind/static/js/main.fb54badb.chunk.js.map",
     "runtime-main.js": "/React-Component-Tailwind/static/js/runtime-main.2d1af6bf.js",
     "runtime-main.js.map": "/React-Component-Tailwind/static/js/runtime-main.2d1af6bf.js.map",
-    "static/js/2.0d605105.chunk.js": "/React-Component-Tailwind/static/js/2.0d605105.chunk.js",
-    "static/js/2.0d605105.chunk.js.map": "/React-Component-Tailwind/static/js/2.0d605105.chunk.js.map",
+    "static/js/2.01f838ba.chunk.js": "/React-Component-Tailwind/static/js/2.01f838ba.chunk.js",
+    "static/js/2.01f838ba.chunk.js.map": "/React-Component-Tailwind/static/js/2.01f838ba.chunk.js.map",
     "index.html": "/React-Component-Tailwind/index.html",
-    "precache-manifest.cfccf388d0b3b1bb85102e7de0bd494c.js": "/React-Component-Tailwind/precache-manifest.cfccf388d0b3b1bb85102e7de0bd494c.js",
+    "precache-manifest.f16a8a5e918d94c74c0bcd4fd9e04af2.js": "/React-Component-Tailwind/precache-manifest.f16a8a5e918d94c74c0bcd4fd9e04af2.js",
     "service-worker.js": "/React-Component-Tailwind/service-worker.js",
-    "static/css/main.4b704634.chunk.css.map": "/React-Component-Tailwind/static/css/main.4b704634.chunk.css.map",
-    "static/js/2.0d605105.chunk.js.LICENSE.txt": "/React-Component-Tailwind/static/js/2.0d605105.chunk.js.LICENSE.txt",
+    "static/css/main.676531c4.chunk.css.map": "/React-Component-Tailwind/static/css/main.676531c4.chunk.css.map",
+    "static/js/2.01f838ba.chunk.js.LICENSE.txt": "/React-Component-Tailwind/static/js/2.01f838ba.chunk.js.LICENSE.txt",
     "static/media/main.css": "/React-Component-Tailwind/static/media/arrow.2fd54d28.svg",
     "static/media/facebook.svg": "/React-Component-Tailwind/static/media/facebook.4c5d1ef2.svg",
     "static/media/gmail.svg": "/React-Component-Tailwind/static/media/gmail.06d24dd1.svg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2d1af6bf.js",
-    "static/js/2.0d605105.chunk.js",
-    "static/css/main.4b704634.chunk.css",
-    "static/js/main.f40437dd.chunk.js"
+    "static/js/2.01f838ba.chunk.js",
+    "static/css/main.676531c4.chunk.css",
+    "static/js/main.fb54badb.chunk.js"
   ]
 }
