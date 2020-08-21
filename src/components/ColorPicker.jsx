@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
+const origin = {
+    top: '-20%',
+    opacity: 0
+}
+
+const moved = {
+    top: '-15%',
+    opacity: 1
+}
+
 const ColorPicker = () => {
 
-    const [colors, setColors] = useState(["#6E88EB", "#F22FDE", "#C0092F", "#23AA43", "#828EA8"])
-
+    const [colors, setColors] = useState(["#6E88EB", "#F22FDE", "#C0092F", "#23AA43", "#828EA8"]);
+    const [select, setSelect] = useState("#6E88EB");
+    const [isRemind, setIsRemind] = useState(false)
 
     const random = () => {
         const letters = "0123456789ABCDEF";
@@ -24,16 +35,26 @@ const ColorPicker = () => {
         setColors(colorArray)
     }
 
+    const copyAlert = (color) => {
+        setSelect(color)
+    }
+
+
     return (
-        <div className="w-full m-auto p-4 bg-gray-400 rounded-md shadow-md flex flex-col items-center">
+
+
+
+
+        <div className="relative w-full m-auto p-4 bg-gray-400 rounded-md shadow-md flex flex-col items-center">
+            <div
+                className="absolute w-1/5 p-3 bg-red-400 rounded-lg text-white text-xl text-center transition-all duration-200 ease-in"
+                style={ `${isRemind ? 'moved' : ''}` }>{select}</div>
             <h2 className="my-10 text-3xl">Color Palette Generator</h2>
             <ul className="flex justify-around mb-10">
                 {
                     colors.map(color => <li className="p-2 bg-white rounded-md mx-4" key={color}>
                         <CopyToClipboard text={color}>
-                            <div className="py-20 px-16 rounded-md" style={{ backgroundColor: `${color}` }}>
-
-                            </div>
+                            <div className="py-20 px-16 rounded-md cursor-pointer" style={{ backgroundColor: `${color}` }} onClick={()=>copyAlert(color)}></div>
                         </CopyToClipboard>
                         <p className="text-center mt-2">{color}</p>
                     </li>)
