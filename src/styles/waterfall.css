@@ -1,0 +1,38 @@
+.wa-grid {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -webkit-column-fill: auto;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -moz-column-fill: auto;
+    /* 設置列 */
+    column-count: 4; 
+    /* 設置間距 */
+    column-gap: 15px;
+    column-fill: auto;
+
+}
+
+@media (max-width: 1024px) {
+    .wa-grid{
+        column-count: 3; 
+    }
+}
+
+@media (max-width: 768px) {
+    .wa-grid{
+        column-count: 2; 
+    }
+}
+
+.wa-block {
+    display: block;
+    padding: 20px;
+    /* word-wrap: break-word; */
+    margin-bottom: 20px;
+    /* -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid; */
+    /* 防止多列布局 */
+    break-inside: avoid;
+}
+

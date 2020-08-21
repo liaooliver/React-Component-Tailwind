@@ -51,7 +51,7 @@ const TableList = () => {
     ]
 
     return (
-        <div className="bg-white shadow rounded-lg p-10" style={layout}>
+        <div className="bg-white shadow rounded-lg p-10 m-auto" style={layout}>
             <div className="mb-10">
                 <span className="flex items-center">
                     <p>Show analytics for:</p>
