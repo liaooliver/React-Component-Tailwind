@@ -13,6 +13,7 @@ import TableList from './components/TableList';
 import LoginPage from './components/LoginPage';
 import Timeline from './components/Timeline.jsx';
 import Upload from './components/Upload.jsx';
+import Waterfall from './components/Waterfall';
 
 export default function App() {
   return (
@@ -51,7 +52,10 @@ export default function App() {
                   <Link to="/timeline">Time Line</Link>
                 </li>
                 <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/upload">Upload page</Link>
+                  <Link to="/upload">Upload Page</Link>
+                </li>
+                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
+                  <Link to="/waterfall">Water Fall Layout</Link>
                 </li>
               </ul>
             </div>
@@ -79,6 +83,9 @@ export default function App() {
                 </Route>
                 <Route path="/upload">
                   <Upload />
+                </Route>
+                <Route path="/waterfall">
+                  <Waterfall />
                 </Route>
               </Switch>
             </div>
