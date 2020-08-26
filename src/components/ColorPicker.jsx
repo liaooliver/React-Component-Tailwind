@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import ColorItem from './ColorItem';
+
 
 const origin = {
     top: '-20%',
@@ -41,23 +42,13 @@ const ColorPicker = () => {
 
 
     return (
-
-
-
-
         <div className="relative w-full m-auto p-4 bg-gray-400 rounded-md shadow-md flex flex-col items-center">
-            <div
-                className="absolute w-1/5 p-3 bg-red-400 rounded-lg text-white text-xl text-center transition-all duration-200 ease-in"
-                style={ `${isRemind ? 'moved' : ''}` }>{select}</div>
+            {/* <div className="absolute w-1/5 p-3 bg-red-400 rounded-lg text-white text-xl text-center transition-all duration-200 ease-in"
+                style={ `${isRemind ? 'moved' : ''}` }>{select}</div> */}
             <h2 className="my-10 text-3xl">Color Palette Generator</h2>
             <ul className="flex justify-around mb-10">
                 {
-                    colors.map(color => <li className="p-2 bg-white rounded-md mx-4" key={color}>
-                        <CopyToClipboard text={color}>
-                            <div className="py-20 px-16 rounded-md cursor-pointer" style={{ backgroundColor: `${color}` }} onClick={()=>copyAlert(color)}></div>
-                        </CopyToClipboard>
-                        <p className="text-center mt-2">{color}</p>
-                    </li>)
+                    colors.map(color => <ColorItem color={color} key={color} />)
                 }
             </ul>
             <div>
