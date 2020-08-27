@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import '../styles/colorpicker.css';
+import '../styles/colorpicker.scoped.css';
 
 
 const ColorItem = ({ color }) => {

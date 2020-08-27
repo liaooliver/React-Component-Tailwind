@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import ColorItem from './ColorItem';
 
 
-
-
 const ColorPicker = () => {
 
     const [colors, setColors] = useState(["#6E88EB", "#F22FDE", "#C0092F", "#23AA43", "#828EA8"]);
