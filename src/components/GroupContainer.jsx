@@ -14,10 +14,10 @@ const GroupContainer = ({group:{ teamMember, title}, groupindex, handleMoveMyTas
             const to = { toGruop: groupindex };
             handleMoveMyTask(from, to);
         },
-        // collect: monitor => ({
-        //     isOver: monitor.isOver(),
-        //     canDrop: monitor.canDrop()
-        // })
+        collect: monitor => ({
+            isOver: monitor.isOver(),
+            canDrop: monitor.canDrop()
+        })
     })
 
     const team = teamMember.map((team, index) => {
@@ -31,10 +31,10 @@ const GroupContainer = ({group:{ teamMember, title}, groupindex, handleMoveMyTas
     });
 
     return (
-        <div ref={dropRef} className="p-3 bg-white mr-2 mb-2 last:mr-0 overflow-auto" style={{ minWidth:'350px',height: '300px'}}>
+        <div ref={dropRef} className="p-3 bg-white mr-2 mb-2 last:mr-0 overflow-auto rounded-md shadow-md" style={{ minWidth:'350px',height: '300px'}}>
             {title} {groupindex}
             {team}
-            {/* {isOver && canDrop ? <Member empty /> : ""} */}
+            {isOver && canDrop ? <Member empty /> : ""}
         </div>
     )
 }

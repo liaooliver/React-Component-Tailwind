@@ -3,6 +3,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
 import GroupContainer from './GroupContainer';
 import MemberContainer from './MemberContainer';
+import CustomDragLayer from './CustomDragLayer';
 
 const workGroups = [
     {
@@ -89,6 +90,7 @@ const Oraniztional = () => {
 
     return (
         <DndProvider backend={HTML5Backend}>
+            <CustomDragLayer />
             <div className="w-full h-full flex bg-gray-400 rounded-md shadow-md p-3">
                 {
                     groups.map((group, groupindex) => {
