@@ -33,7 +33,7 @@ export default function App() {
             <h5 className="text-gray-600 uppercase my-4">Component Example</h5>
             <div>
               <h5 className="text-sm font-bold text-gray-500 uppercase">Header</h5>
-              <ul>
+              <ul className="Links">
                 <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
                   <Link to="/commonheader">Common Header</Link>
                 </li>

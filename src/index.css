@@ -1,3 +1,13 @@
+.Links{
+  counter-reset: link-item 0;
+}
+
+.Links > li::before{
+  content: counter(link-item) '. ';
+  counter-increment: link-item 1;
+}
+
+
 .styled-checkbox[type='checkbox']{
   opacity: 0;
 }
@@ -23,4 +33,6 @@
 .styled-checkbox:checked + label::before{
   background-image: url('./assets/icon/correct.png');
 }
+
+
 
