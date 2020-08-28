@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/waterfall.css';
+import '../styles/waterfall.scoped.css';
 
 const Waterfall = () => {
 
