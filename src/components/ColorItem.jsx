@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import '../styles/colorpicker.css';
+import '../styles/colorpicker.scoped.css';
 
 
 const ColorItem = ({ color }) => {
@@ -19,8 +19,7 @@ const ColorItem = ({ color }) => {
             <CopyToClipboard text={color}>
                 <div className="relative py-20 px-16 rounded-md cursor-pointer"
                     style={{ backgroundColor: `${color}` }}
-                    onClick={()=> copied()}
-                >
+                    onClick={()=> copied()}>
                     <div className={`absolute origin transition-all duration-500 ease-in ${showCopied? 'showPos ' : ''}`}>copied!!</div>
                 </div>
             </CopyToClipboard>

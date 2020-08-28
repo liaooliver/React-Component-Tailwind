@@ -15,6 +15,7 @@ import Timeline from './components/Timeline.jsx';
 import Upload from './components/Upload.jsx';
 import Waterfall from './components/Waterfall';
 import ColorPicker from './components/ColorPicker';
+import Oraniztional from './components/Organizational';
 
 export default function App() {
   return (
@@ -61,6 +62,9 @@ export default function App() {
                 <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
                   <Link to="/colorpicker">Color Picker</Link>
                 </li>
+                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
+                  <Link to="/oraniztional">Oraniztional</Link>
+                </li>
               </ul>
             </div>
           </nav>
@@ -93,6 +97,9 @@ export default function App() {
                 </Route>
                 <Route path="/colorpicker">
                   <ColorPicker />
+                </Route>
+                <Route path="/oraniztional">
+                  <Oraniztional />
                 </Route>
               </Switch>
             </div>
