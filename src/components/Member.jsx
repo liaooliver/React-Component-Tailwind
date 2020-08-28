@@ -3,9 +3,8 @@ import user from '../assets/icon/user.png';
 
 
 const Member = ({ name, empty }) => {
-    console.log("Member", name)
 
-    const Text = ({name}) => {
+    const Text = ({ name }) => {
         return <div className="flex items-center">
             <img src={user} alt="user" />
             {name}

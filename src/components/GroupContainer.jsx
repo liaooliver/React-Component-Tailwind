@@ -9,7 +9,6 @@ const GroupContainer = ({group:{ teamMember, title}, groupindex, handleMoveMyTas
     const [{ isOver, canDrop }, dropRef] = useDrop({
         accept: ItemTypes.MEMBER,
         drop: item => {
-            console.log("Group drop: item FROM", item)
             const from = item;
             const to = { toGruop: groupindex };
             handleMoveMyTask(from, to);

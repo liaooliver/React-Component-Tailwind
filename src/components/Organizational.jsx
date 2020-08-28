@@ -80,7 +80,6 @@ const Oraniztional = () => {
         const { team, groupindex, index } = from;
         const { toGruop } = to;
         const newGroups = [...groups];
-        console.log(groupindex, toGruop, newGroups[toGruop])
         // remove task
         newGroups[groupindex].teamMember.splice(index, 1);
         // move task
@@ -89,27 +88,29 @@ const Oraniztional = () => {
     };
 
     return (
-        <DndProvider backend={HTML5Backend}>
-            <CustomDragLayer />
-            <div className="w-full h-full flex bg-gray-400 rounded-md shadow-md p-3">
-                {
-                    groups.map((group, groupindex) => {
-                        const propsToColumn = { group, groupindex, handleMoveMyTask };
-                        if (group.attr === 'list') return <MemberContainer key={`column ${groupindex}`} {...propsToColumn} />
-                        return null
-                    })
-                }
-                <div className="p-3 flex flex-wrap">
+        <div className="rounded-md bg-gray-400">
+            <DndProvider backend={HTML5Backend}>
+                <CustomDragLayer />
+                <div className="w-full h-full flex">
                     {
                         groups.map((group, groupindex) => {
-                            const propsToColumn = { group, groupindex: groupindex, handleMoveMyTask };
-                            if (group.attr === 'workgroup') return <GroupContainer key={`column ${groupindex}`} {...propsToColumn} />
+                            const propsToColumn = { group, groupindex, handleMoveMyTask };
+                            if (group.attr === 'list') return <MemberContainer key={`column ${groupindex}`} {...propsToColumn} />
                             return null
                         })
                     }
+                    <div className="p-3 flex flex-wrap">
+                        {
+                            groups.map((group, groupindex) => {
+                                const propsToColumn = { group, groupindex: groupindex, handleMoveMyTask };
+                                if (group.attr === 'workgroup') return <GroupContainer key={`column ${groupindex}`} {...propsToColumn} />
+                                return null
+                            })
+                        }
+                    </div>
                 </div>
-            </div>
-        </DndProvider>
+            </DndProvider>
+        </div>
     )
 }
 

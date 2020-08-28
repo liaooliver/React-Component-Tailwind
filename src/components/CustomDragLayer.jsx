@@ -39,10 +39,8 @@ const CustomDragLayer = () => {
         isDragging: monitor.isDragging()
       }));
       function renderItem() {
-        console.log(item)
         switch (itemType) {
           case ItemTypes.MEMBER:
-            console.log(item.team)
             return <Member name={item.team.name} />;
           default:
             return null;
