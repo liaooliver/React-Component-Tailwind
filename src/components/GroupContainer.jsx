@@ -30,10 +30,12 @@ const GroupContainer = ({group:{ teamMember, title}, groupindex, handleMoveMyTas
     });
 
     return (
-        <div ref={dropRef} className="p-3 bg-white mr-2 mb-2 last:mr-0 overflow-auto rounded-md shadow-md" style={{ minWidth:'350px',height: '300px'}}>
-            {title} {groupindex}
-            {team}
-            {isOver && canDrop ? <Member empty /> : ""}
+        <div className="p-3 bg-white mr-2 mb-2 last:mr-0 overflow-auto rounded-md shadow-md" style={{ minWidth: '350px', height:'350px' }}>
+            <h2>{title}</h2>
+            <div ref={dropRef} className="w-full p-2 rounded-md bg-blue-100" style={{height: '300px'}}>
+                {team}
+                {isOver && canDrop ? <Member empty /> : ""}
+            </div>
         </div>
     )
 }

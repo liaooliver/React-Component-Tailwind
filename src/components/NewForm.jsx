@@ -5,6 +5,7 @@ const NewForm = ({createMember, close}) => {
 
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = data => {
+        console.log(data)
         createMember(data)
     }
     

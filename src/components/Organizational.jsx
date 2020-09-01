@@ -93,11 +93,11 @@ const Oraniztional = () => {
         setGroups(newGroups);
     };
 
-    const createMember = ({job, name}) => {
+    const createMember = ({job, name, isLeader}) => {
         const obj = {
             job,
             name,
-            leader: false
+            leader:isLeader
         }
         const newGroups = [...groups];
         newGroups[0]['teamMember'].push(obj);
