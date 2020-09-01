@@ -6,21 +6,25 @@
 .create-group{
     top: 5px;
     left: 0px;
+    opacity: 0;
 }
 
 .create-member{
     top: 5px;
     left: 0px;
+    opacity: 0;
 }
 
 .create-group-active{
     top: 5px;
     left: 80px;
+    opacity: 1;
 }
 
 .create-member-active{
     top: 5px;
     left: 156px;
+    opacity: 1;
 }
 
 .form-position{

@@ -14,37 +14,37 @@ const workGroups = [
         teamMember: [
             {
                 job: 'Front-End',
-                name: 'A',
+                name: 'Alison',
                 leader: false
             },
             {
                 job: 'UI/UX',
-                name: 'B',
+                name: 'Belen',
                 leader: false
             },
             {
                 job: 'Back-end',
-                name: 'C',
+                name: 'Belinda',
                 leader: false
             },
             {
                 job: 'Back-end',
-                name: 'D',
+                name: 'Cheryl',
                 leader: false
             },
             {
                 job: 'Front-end',
-                name: 'E',
+                name: 'Darlene',
                 leader: false
             },
             {
                 job: 'PM',
-                name: 'F',
-                leader: false
+                name: 'Gail',
+                leader: true
             },
             {
                 job: 'Back-end',
-                name: 'G',
+                name: 'Gladys',
                 leader: false
             },
             
@@ -61,7 +61,7 @@ const workGroups = [
         teamMember: [
             {
                 job: 'Data-base',
-                name: 'H',
+                name: 'Hazel',
                 leader: false
             }
         ]
@@ -129,7 +129,7 @@ const Oraniztional = () => {
                 addTeam || addMember ? <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-gray-600 opacity-25 z-20"></div>
                     <div className="absolute z-30 form-position">
-                        <NewForm createMember={createMember} />
+                        <NewForm close={close} createMember={createMember} />
                     </div>
                 </div>
                  : ""

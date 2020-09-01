@@ -11,7 +11,7 @@ const DraggableMember = props => {
 
     return (
       <li ref={dragRef}  className="mb-3 last:mb-0 rounded-md bg-orange-200 list-none">
-        <Member name={props.team.name} />
+        <Member name={props.team.name} leader={props.team.leader} />
       </li>
     );
   };

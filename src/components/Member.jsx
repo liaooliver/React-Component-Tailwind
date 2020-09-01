@@ -1,13 +1,20 @@
 import React from 'react';
 import user from '../assets/icon/user.png';
+import iconic from '../assets/icon/crown.png';
 
 
-const Member = ({ name, empty }) => {
+const Member = ({ name, leader, empty }) => {
 
     const Text = ({ name }) => {
-        return <div className="flex items-center">
+        return <div className="flex justify-between items-center">
             <img src={user} alt="user" />
-            {name}
+            <span>
+                <p>{name}</p>
+                <img src="" alt=""/>
+            </span>
+            <span className="w-8">
+                { leader && <img width="100%" src={iconic} alt="Iconic" /> }
+            </span>
         </div>
     }
 

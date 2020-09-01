@@ -5,7 +5,6 @@ import member from '../assets/icon/newmember.png';
 const BtnGroup = ({openCreate, openTeam, openMember, isOpen}) => {
 
     return <div className="w-full h-8 relative">
-
         <div 
             className={`w-12 h-12 z-10 inline-block absolute text-gray-200 bg-red-400 rounded-full cursor-pointer transform ${isOpen ? 'rotate-180' : ''} transition-all duration-500`} 
             onClick={() => openCreate()}
