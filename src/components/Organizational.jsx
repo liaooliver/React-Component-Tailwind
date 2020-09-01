@@ -3,7 +3,9 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
 import GroupContainer from './GroupContainer';
 import MemberContainer from './MemberContainer';
-import CustomDragLayer from './CustomDragLayer';
+import BtnGroup from './BtnGroup';
+import NewForm from './NewForm';
+import '../styles/oraniztional.css';
 
 const workGroups = [
     {
@@ -71,9 +73,13 @@ const workGroups = [
     }
 ]
 
+
 const Oraniztional = () => {
 
-    const [groups, setGroups] = useState(workGroups)
+    const [groups, setGroups] = useState(workGroups);
+    const [isOpen, setIsOpen] = useState(false);
+    const [addTeam, setAddTeam] = useState(false);
+    const [addMember, setAddMember] = useState(false);
 
     const handleMoveMyTask = (from, to) => {
 
@@ -87,10 +93,51 @@ const Oraniztional = () => {
         setGroups(newGroups);
     };
 
+    const createMember = ({job, name}) => {
+        const obj = {
+            job,
+            name,
+            leader: false
+        }
+        const newGroups = [...groups];
+        newGroups[0]['teamMember'].push(obj);
+        setGroups(newGroups);
+        close();
+    }
+
+    const openCreate = () => {
+        setIsOpen(!isOpen)
+    }
+
+    const openTeam = () => {
+        setAddTeam(!addTeam)
+    }
+
+    const openMember = () => {
+        setAddMember(!addMember)
+    }
+
+    const close = () => {
+        setIsOpen(false)
+        setAddTeam(false)
+        setAddMember(false)
+    }
+
     return (
-        <div className="rounded-md bg-gray-400">
+        <div className="relative rounded-md bg-gray-400 mx-auto">
+            {
+                addTeam || addMember ? <div className="absolute inset-0">
+                    <div className="absolute inset-0 bg-gray-600 opacity-25 z-20"></div>
+                    <div className="absolute z-30 form-position">
+                        <NewForm createMember={createMember} />
+                    </div>
+                </div>
+                 : ""
+            }
+            <div className="p-3">
+                <BtnGroup openCreate={openCreate} openTeam={openTeam} openMember={openMember} isOpen={isOpen}  />
+            </div>
             <DndProvider backend={HTML5Backend}>
-                <CustomDragLayer />
                 <div className="w-full h-full flex">
                     {
                         groups.map((group, groupindex) => {

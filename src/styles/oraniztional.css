@@ -1,0 +1,30 @@
+.create-deco{
+    top: 20px;
+    left: 16px;
+}
+
+.create-group{
+    top: 5px;
+    left: 0px;
+}
+
+.create-member{
+    top: 5px;
+    left: 0px;
+}
+
+.create-group-active{
+    top: 5px;
+    left: 80px;
+}
+
+.create-member-active{
+    top: 5px;
+    left: 156px;
+}
+
+.form-position{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

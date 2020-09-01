@@ -10,7 +10,7 @@ const MemberContainer = ({ group:{ teamMember, title}, groupindex, handleMoveMyT
         const propsToDraggableMember = { team, groupindex, index };
         return (
           <DraggableMember
-            key={`${groupindex} ${index} ${team}`}
+            key={`${groupindex}-${index}`}
             {...propsToDraggableMember}
           />
         );
@@ -19,7 +19,6 @@ const MemberContainer = ({ group:{ teamMember, title}, groupindex, handleMoveMyT
     const [{ isOver, canDrop }, dropRef] = useDrop({
         accept: ItemTypes.MEMBER,
         drop: item => {
-            console.log("Membe drop: item FROM", item)
             const from = item;
             const to = { toGruop: groupindex };
             handleMoveMyTask(from, to);

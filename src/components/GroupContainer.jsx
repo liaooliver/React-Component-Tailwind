@@ -23,7 +23,7 @@ const GroupContainer = ({group:{ teamMember, title}, groupindex, handleMoveMyTas
         const propsToDraggableMember = { team, groupindex, index };
         return (
           <DraggableMember
-            key={`${groupindex} ${index} ${team}`}
+            key={`${groupindex}-${index}`}
             {...propsToDraggableMember}
           />
         );
