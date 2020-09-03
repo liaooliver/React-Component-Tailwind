@@ -16,13 +16,13 @@ const BtnGroup = ({openCreate, openTeam, openMember, isOpen}) => {
             className={`absolute create-group w-10 h-10 inline-block cursor-pointer text-center leading-8 rounded-full bg-red-300 transition-all duration-500 ${isOpen ? 'create-group-active' : ''}`} 
             onClick={() => openTeam()}
         >
-            <img className="w-6 inline-block" src={team} alt="team" />
+            <img className="w-6 inline-block" src={member} alt="member" />
         </div>
         <div 
             className={`absolute create-member w-10 h-10 inline-block cursor-pointer text-center leading-8  rounded-full bg-red-300  transition-all duration-500 ${isOpen ? 'create-member-active' : ''}`} 
             onClick={() => openMember()}
         >
-            <img className="w-6 inline-block" src={member} alt="member" />
+            <img className="w-6 inline-block" src={team} alt="team" />
         </div>
     </div>
 }

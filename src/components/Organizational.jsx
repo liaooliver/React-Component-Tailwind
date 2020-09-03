@@ -90,6 +90,7 @@ const Oraniztional = () => {
         newGroups[groupindex].teamMember.splice(index, 1);
         // move task
         newGroups[toGruop].teamMember.push(team);
+        newGroups[toGruop].teamMember.sort((a, b) => a.leader > b.leader ? -1 : 1)
         setGroups(newGroups);
     };
 
@@ -132,7 +133,7 @@ const Oraniztional = () => {
                         <NewForm close={close} createMember={createMember} />
                     </div>
                 </div>
-                 : ""
+                : ""
             }
             <div className="p-3">
                 <BtnGroup openCreate={openCreate} openTeam={openTeam} openMember={openMember} isOpen={isOpen}  />

@@ -14,7 +14,7 @@ const NewForm = ({createMember, close}) => {
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="job">Job Title</label>
                 <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                    className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.job? 'border border-red-600' : ''}`}
                     id="job"
                     name="job"
                     ref={register({ required: true })}
@@ -24,13 +24,12 @@ const NewForm = ({createMember, close}) => {
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">Name</label> 
                 <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                    className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.name? 'border border-red-600' : ''}`}
                     id="name" 
                     name="name"
                     ref={register({ required: true })}
                     type="text" 
                     placeholder="Please enter name" />
-                {errors.name && <span>This field is required</span>}
             </div>
             <div className="mb-4">
                 <label className="inline-block mr-2 text-gray-700 text-sm font-bold" htmlFor="isLeader">Leader</label> 
@@ -40,7 +39,6 @@ const NewForm = ({createMember, close}) => {
                     ref={register}
                     type="checkbox"
                 />
-                {errors.name && <span>This field is required</span>}
             </div>
             <div className="flex items-center justify-between">
                 <input type="submit" value="Submit" className="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" />
