@@ -17,6 +17,7 @@ import Waterfall from './components/Waterfall';
 import ColorPicker from './components/ColorPicker';
 import Oraniztional from './components/Organizational';
 import HOC from './components/Hoc';
+import Hook from './components/hooks/Hook';
 
 export default function App() {
   return (
@@ -67,7 +68,10 @@ export default function App() {
                   <Link to="/oraniztional">Oraniztional</Link>
                 </li>
                 <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/hoc">HOC</Link>
+                  <Link to="/hoc">HOC Example</Link>
+                </li>
+                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
+                  <Link to="/hook_example">Hook Example</Link>
                 </li>
               </ul>
             </div>
@@ -107,6 +111,9 @@ export default function App() {
                 </Route>
                 <Route path="/hoc">
                   <HOC />
+                </Route>
+                <Route path="/hook_example">
+                  <Hook />
                 </Route>
               </Switch>
             </div>
