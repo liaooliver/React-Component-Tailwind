@@ -7,9 +7,13 @@ const CreditCardWithOpen = withOpen(CreditCard)
 const PromotionWithOpen = withOpen(Promotion)
 
 const HOC = () => {
-    return <div className="flex">
-        <CreditCardWithOpen></CreditCardWithOpen>
-        <PromotionWithOpen></PromotionWithOpen>
+    return <div className="w-full flex justify-center">
+        <div className="mr-5">
+            <CreditCardWithOpen></CreditCardWithOpen>
+        </div>
+        <div>
+            <PromotionWithOpen></PromotionWithOpen>
+        </div>
     </div>
 }
 
