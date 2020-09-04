@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 import BookList from './BookList';
+import ThemeToggle from './ThemeToggle';
 import ThemeContextProvider from './contexts/ThemeContext';
 
 const Hook = () => {
@@ -9,6 +10,7 @@ const Hook = () => {
             <ThemeContextProvider>
                 <NavBar />
                 <BookList />
+                <ThemeToggle />
             </ThemeContextProvider>
         </div>
     )
