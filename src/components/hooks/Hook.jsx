@@ -4,6 +4,7 @@ import BookList from './BookList';
 import ThemeToggle from './ThemeToggle';
 import ThemeContextProvider from './contexts/ThemeContext';
 import AuthContextProvider from './contexts/AuthContext';
+import BookContextProvider from './contexts/BookContext';
 
 import SongList from './SongList';
 
@@ -14,7 +15,9 @@ const Hook = () => {
                 <ThemeContextProvider>
                     <AuthContextProvider>
                         <NavBar />
-                        <BookList />
+                        <BookContextProvider>
+                            <BookList />
+                        </BookContextProvider>
                         <ThemeToggle />
                     </AuthContextProvider>
                 </ThemeContextProvider>
