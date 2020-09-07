@@ -19,7 +19,7 @@ const BookList = () => {
             </ul>
         </div>
     ):(
-        <div className="text-gray-200">No books to read</div>        
+        <div className="text-gray-200 p-3 bg-green-700">No books to read</div>        
     ) ;
 }
  

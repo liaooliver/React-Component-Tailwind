@@ -2,6 +2,7 @@ import React from 'react';
 import BookContextProvider from './context/BookContext';
 import NavBar from './components/NavBar';
 import BookList from './components/BookList';
+import NewBookForm from './components/BookForm';
 
 const Book = () => {
     return (
@@ -9,6 +10,7 @@ const Book = () => {
             <BookContextProvider>
                 <NavBar />
                 <BookList />
+                <NewBookForm />
             </BookContextProvider>
         </div>
     );
