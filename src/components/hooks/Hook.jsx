@@ -19,7 +19,7 @@ const Hook = () => {
                     </AuthContextProvider>
                 </ThemeContextProvider>
             </div>
-            <div className="inline-block">
+            <div className="block">
                 <SongList />
             </div>
         </div>
