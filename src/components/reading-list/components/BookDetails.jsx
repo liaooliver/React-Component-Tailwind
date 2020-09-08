@@ -3,10 +3,11 @@ import { BookContext } from '../context/BookContext';
 
 const BookDetails = ({ book }) => {
 
-    const { removeBook } = useContext(BookContext)
+    // const { removeBook } = useContext(BookContext)
+    const { dispatch } = useContext(BookContext)
 
     return ( 
-        <li onClick={()=> removeBook(book.id)} className="text-gray-200 p-3 bg-green-700 flex justify-between cursor-pointer">
+        <li onClick={()=> dispatch({ type:'REMOVE_BOOK' , id: book.id})} className="text-gray-200 p-3 bg-green-700 flex justify-between cursor-pointer">
             <div>{book.title}</div>
             <div>{book.author}</div>
         </li>
