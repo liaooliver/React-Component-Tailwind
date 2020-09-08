@@ -1,30 +1,32 @@
 {
   "files": {
     "main.css": "/React-Component-Tailwind/static/css/main.fa1b2129.chunk.css",
-    "main.js": "/React-Component-Tailwind/static/js/main.074ef9f2.chunk.js",
-    "main.js.map": "/React-Component-Tailwind/static/js/main.074ef9f2.chunk.js.map",
+    "main.js": "/React-Component-Tailwind/static/js/main.d91af101.chunk.js",
+    "main.js.map": "/React-Component-Tailwind/static/js/main.d91af101.chunk.js.map",
     "runtime-main.js": "/React-Component-Tailwind/static/js/runtime-main.2d1af6bf.js",
     "runtime-main.js.map": "/React-Component-Tailwind/static/js/runtime-main.2d1af6bf.js.map",
-    "static/js/2.d887fc52.chunk.js": "/React-Component-Tailwind/static/js/2.d887fc52.chunk.js",
-    "static/js/2.d887fc52.chunk.js.map": "/React-Component-Tailwind/static/js/2.d887fc52.chunk.js.map",
+    "static/js/2.c15058ce.chunk.js": "/React-Component-Tailwind/static/js/2.c15058ce.chunk.js",
+    "static/js/2.c15058ce.chunk.js.map": "/React-Component-Tailwind/static/js/2.c15058ce.chunk.js.map",
     "index.html": "/React-Component-Tailwind/index.html",
-    "precache-manifest.f808797a57c0d7c37ae4696c04edd190.js": "/React-Component-Tailwind/precache-manifest.f808797a57c0d7c37ae4696c04edd190.js",
+    "precache-manifest.e9ca96cc3be3c48374af643043001200.js": "/React-Component-Tailwind/precache-manifest.e9ca96cc3be3c48374af643043001200.js",
     "service-worker.js": "/React-Component-Tailwind/service-worker.js",
     "static/css/main.fa1b2129.chunk.css.map": "/React-Component-Tailwind/static/css/main.fa1b2129.chunk.css.map",
-    "static/js/2.d887fc52.chunk.js.LICENSE.txt": "/React-Component-Tailwind/static/js/2.d887fc52.chunk.js.LICENSE.txt",
+    "static/js/2.c15058ce.chunk.js.LICENSE.txt": "/React-Component-Tailwind/static/js/2.c15058ce.chunk.js.LICENSE.txt",
     "static/media/main.css": "/React-Component-Tailwind/static/media/arrow.2fd54d28.svg",
     "static/media/facebook.svg": "/React-Component-Tailwind/static/media/facebook.4c5d1ef2.svg",
     "static/media/gmail.svg": "/React-Component-Tailwind/static/media/gmail.06d24dd1.svg",
     "static/media/icon_mail.svg": "/React-Component-Tailwind/static/media/icon_mail.7a823488.svg",
     "static/media/icon_tel.svg": "/React-Component-Tailwind/static/media/icon_tel.8194a419.svg",
     "static/media/maxresdefault.jpg": "/React-Component-Tailwind/static/media/maxresdefault.4d3c1369.jpg",
+    "static/media/payment.png": "/React-Component-Tailwind/static/media/payment.25f219ae.png",
+    "static/media/promotion.png": "/React-Component-Tailwind/static/media/promotion.ea8a6cec.png",
     "static/media/returnicon.svg": "/React-Component-Tailwind/static/media/returnicon.870a5694.svg",
     "static/media/twitter.svg": "/React-Component-Tailwind/static/media/twitter.c9f12008.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2d1af6bf.js",
-    "static/js/2.d887fc52.chunk.js",
+    "static/js/2.c15058ce.chunk.js",
     "static/css/main.fa1b2129.chunk.css",
-    "static/js/main.074ef9f2.chunk.js"
+    "static/js/main.d91af101.chunk.js"
   ]
 }

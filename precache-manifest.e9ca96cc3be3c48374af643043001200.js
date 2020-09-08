@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8bab0a21d8eeba14f3437d7eb66d9a53",
+    "revision": "00650641661c829f27f9bb2fccb51b85",
     "url": "/React-Component-Tailwind/index.html"
   },
   {
-    "revision": "eb5793fd1a8b8f13f059",
+    "revision": "3f1da1df9bbc2edb39bc",
     "url": "/React-Component-Tailwind/static/css/main.fa1b2129.chunk.css"
   },
   {
-    "revision": "ffaf2ef3bd0075480ffe",
-    "url": "/React-Component-Tailwind/static/js/2.d887fc52.chunk.js"
+    "revision": "2054b9f8b64ecf2ddfca",
+    "url": "/React-Component-Tailwind/static/js/2.c15058ce.chunk.js"
   },
   {
     "revision": "2069192f75c6f3fb6247231eea52f248",
-    "url": "/React-Component-Tailwind/static/js/2.d887fc52.chunk.js.LICENSE.txt"
+    "url": "/React-Component-Tailwind/static/js/2.c15058ce.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eb5793fd1a8b8f13f059",
-    "url": "/React-Component-Tailwind/static/js/main.074ef9f2.chunk.js"
+    "revision": "3f1da1df9bbc2edb39bc",
+    "url": "/React-Component-Tailwind/static/js/main.d91af101.chunk.js"
   },
   {
     "revision": "df21327d7899a14d0872",
@@ -54,6 +54,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4d3c1369985d2ee11ea94727b8c0381a",
     "url": "/React-Component-Tailwind/static/media/maxresdefault.4d3c1369.jpg"
+  },
+  {
+    "revision": "25f219aec70da47667ac74f624a89d8e",
+    "url": "/React-Component-Tailwind/static/media/payment.25f219ae.png"
+  },
+  {
+    "revision": "ea8a6cecd183bdcab67c28ffa29db174",
+    "url": "/React-Component-Tailwind/static/media/promotion.ea8a6cec.png"
   },
   {
     "revision": "870a5694b10e508084d7ae1a39c1f665",
