@@ -2,9 +2,9 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
+  Route
 } from 'react-router-dom';
+import NavBar from './layouts/NavBar';
 import logo from './assets/icon/maxresdefault.jpg';
 import CommonHeader from './components/CommonHeader';
 import ContactHeader from './components/ContactHeader';
@@ -33,53 +33,7 @@ export default function App() {
         </div>
 
         <div className="flex flex-grow">
-          <nav className="w-64 flex-none border-black px-6 shadow-xs">
-            <h5 className="text-gray-600 uppercase my-4">Component Example</h5>
-            <div>
-              <h5 className="text-sm font-bold text-gray-500 uppercase">Header</h5>
-              <ul className="Links">
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/commonheader">Common Header</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/contact">Contact in Header</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/detailcard">Details Card</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/tablelist">Table List</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/login">Login Page</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/timeline">Time Line</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/upload">Upload Page</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/waterfall">Water Fall Layout</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/colorpicker">Color Picker</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/oraniztional">Oraniztional</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/hoc">HOC Example</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/hook_example">Hook Example</Link>
-                </li>
-                <li className="my-2 p-2 hover:bg-gray-300 hover:text-gray-700 rounded-md">
-                  <Link to="/book">Book</Link>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <NavBar />
           <div className="flex-1 bg-gray-100">
             <div className="flex justify-start items-start px-6 py-4 h-full">
               <Switch>

@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 
 const NewForm = ({createMember, close}) => {
 
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
         console.log(data)
         createMember(data)

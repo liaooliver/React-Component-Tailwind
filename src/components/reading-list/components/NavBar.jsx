@@ -4,6 +4,7 @@ import { BookContext } from '../context/BookContext';
 const NavBar = () => {
 
     const { books } = useContext(BookContext)
+    console.log(books)
 
     return ( 
         <div className="p-8 bg-green-500 text-gray-200 text-center">

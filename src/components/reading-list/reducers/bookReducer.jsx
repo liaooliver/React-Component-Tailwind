@@ -1,6 +1,6 @@
 import uuid from 'uuid/dist/v1';
 
-export const bookReducer = (state, action) => {
+export const bookReducer = async (state, action) => {
     switch (action.type) {
         case 'ADD_BOOK':
             return [...state, {
